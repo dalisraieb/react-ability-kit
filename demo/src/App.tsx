@@ -1,11 +1,11 @@
 // demo/src/App.tsx
 
-import { reactAbilityKit } from "./ability";
+import { reactAbilityKit, type SubjectsMap } from "./ability";
 import { buildAbilityFor } from "./policy";
 
 
 const user = { id: "u1", role: "member", orgId: "org1" } as const;
-const invoice = { id: "i1", ownerId: "u1", status: "draft" } as const;
+const invoice = { id: "i1", ownerId: "u1", status: "sent" } as SubjectsMap["Invoice"];
 
 export default function App() {
   const ability = buildAbilityFor(user);

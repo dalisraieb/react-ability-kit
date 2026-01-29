@@ -1,22 +1,29 @@
 # React Ability
 
-A small, typed permission layer for React that keeps authorization logic **out of your components** and **in one place**.
+**A small, strongly-typed permission layer for React**  
+Keep authorization logic **out of your components** and **in one place**.
 
 ---
 
-## Core idea (in one sentence)
+## Why this exists
 
-> The package centralizes and standardizes permission logic so your UI doesn’t turn into a mess of `if (user.role === …)` checks scattered everywhere.
+Most React apps don’t plan to become permission nightmares — they just grow into one.
 
-That’s it. Everything else is implementation details.
+This package introduces a **policy-first** approach to permissions, so your UI stays clean and your rules stay auditable.
+
+---
+
+## Core idea (one sentence)
+
+> Define permission rules once, then query them everywhere — instead of scattering fragile `if` checks across your UI.
+
+Everything else is just implementation details.
 
 ---
 
 ## The real problem (what goes wrong in real apps)
 
-Let’s start with how apps usually look **without** a permission layer.
-
-### ❌ Without a package (today’s reality)
+### ❌ Without a permission layer
 
 ```tsx
 // Button.tsx
@@ -41,55 +48,48 @@ if (user && user.role !== "guest") {
 }
 ```
 
+### Problems this creates
 
-Problems this creates
-❌ Logic duplication
-The same rules are written differently in many files.
+- ❌ **Logic duplication** – same rules rewritten in different places
+- ❌ **Rules drift** – one condition changes, others don’t
+- ❌ **Impossible to audit** – “Who can edit invoices?” → grep the whole repo
+- ❌ **UI inconsistencies**
+  - Button visible but API rejects
+  - Button hidden but API allows
+- ❌ **No type safety**
 
-❌ Rules drift
-Someone updates one condition but forgets others.
+  ```ts
+  "inovice:update" // typo = silent bug
+  ```
 
-❌ Impossible to audit
-“Who can edit invoices?” → you must search the entire codebase.
+- ❌ **Hard to evolve roles** – adding a new role breaks logic everywhere
 
-❌ UI bugs
-Button visible but API rejects
+---
 
-Button hidden but API allows
+## The missing abstraction: policy-first permissions
 
-❌ No type safety
-ts
-Copier le code
-"inovice:update" // typo = silent bug
-❌ Hard to change roles
-Adding a new role breaks logic everywhere.
-
-What this package introduces (the missing abstraction)
-Key idea: policy-first permissions
 Instead of asking:
 
-“Can the user do this?”
-
-everywhere in the UI…
+> “Can the user do this?”  
+> everywhere in the UI…
 
 You define rules once, then query them everywhere.
 
-Mental model (important)
-Think of your app like this:
+### Mental model
 
-```bash
+```text
 User + Context → Ability → UI decisions
 ```
 
-Your package only handles the Ability part.
-
-```bash
+```text
 User ──► Policy ──► Ability ──► UI / Components
 ```
 
-What the package actually solves (concretely)
-1️⃣ Single source of truth for permissions
-Instead of scattered checks, you get one policy file:
+---
+
+## What this package actually solves
+
+### 1️⃣ Single source of truth for permissions
 
 ```ts
 // policy.ts
@@ -97,13 +97,16 @@ allow("update", "Invoice", invoice => invoice.ownerId === user.id);
 deny("delete", "Invoice");
 ```
 
-Result:
+**Result**
 
-All permission logic lives in one place
+- All rules live in one place
+- Easy to review, change, and reason about
+- No more scattered conditions
 
-Easy to review, change, and reason about
+---
 
-2️⃣ Turns business rules into readable policies
+### 2️⃣ Business rules become readable policies
+
 ❌ Before
 
 ```ts
@@ -115,7 +118,7 @@ if (
 )
 ```
 
-✅ With the package
+✅ After
 
 ```ts
 allow(
@@ -125,12 +128,15 @@ allow(
 );
 ```
 
-This is domain language, not UI logic.
+This is **domain language**, not UI logic.
 
-3️⃣ Removes permission logic from components
+---
+
+### 3️⃣ Removes permission logic from components
+
 ❌ Before
 
-```ts
+```tsx
 {user?.role === "admin" && <DeleteButton />}
 ```
 
@@ -142,10 +148,11 @@ This is domain language, not UI logic.
 </Can>
 ```
 
-Components now care only about UI, not authorization details.
+Your components focus on **rendering**, not authorization.
 
-4️⃣ Prevents permission bugs at compile time (TypeScript win)
-This is huge.
+---
+
+### 4️⃣ Type-safe permissions (TypeScript win)
 
 ❌ Without typing
 
@@ -160,55 +167,62 @@ can("updtae", "Invioce");
 // ❌ TypeScript error immediately
 ```
 
-This eliminates an entire class of bugs.
+This removes an entire class of bugs.
 
-5️⃣ Makes ownership rules first-class (not hacks)
-Ownership checks are usually scattered:
+---
+
+### 5️⃣ Ownership rules become first-class
+
+❌ Scattered ownership checks
 
 ```ts
 if (invoice.ownerId === user.id)
 ```
 
-With this package:
+✅ Centralized ownership rule
 
 ```ts
 allow("update", "Invoice", invoice => invoice.ownerId === user.id);
 ```
 
-Ownership logic becomes:
+Ownership logic is now:
 
-consistent
+- consistent
+- reusable
+- testable
 
-reusable
+---
 
-testable
+### 6️⃣ Predictable SSR & hydration
 
-6️⃣ Makes SSR and hydration predictable
 Without a system:
 
-UI flickers
+- UI flickers
+- Buttons appear/disappear after hydration
+- Server/client logic diverges
 
-Buttons appear/disappear after hydration
+With **React Ability**:
 
-Different logic runs on server vs client
+- Ability is built once from user data
+- Server and client agree on permissions
+- Stable, predictable rendering
 
-With this package:
+---
 
-Ability is created once from the same user data
+## What `<Can />` actually does
 
-Server and client render the same decisions
-
-What the <Can /> component really is
 It’s not magic.
 
 It simply means:
 
-“Render children only if a permission rule passes.”
+> Render children **only if the permission passes**.
 
 Instead of:
+
 ```tsx
 if (!canEdit) return null;
 ```
+
 You write:
 
 ```tsx
@@ -219,68 +233,60 @@ You write:
 
 That’s it.
 
-What this package is NOT
-This is important.
+---
 
-❌ Not an auth system
-❌ Not a backend security layer
-❌ Not a role manager UI
-❌ Not a permission database
+## What this package is NOT
 
-This package:
+❌ Not an authentication system  
+❌ Not a backend security layer  
+❌ Not a role management UI  
+❌ Not a permission database  
 
-does not replace backend checks
+This package **does not**:
 
-does not handle authentication
+- replace backend checks
+- handle authentication
+- store users or roles
 
-does not store roles
+It answers one question only:
 
-It only answers one question:
+> **“Given a user and a resource, is this action allowed?”**
 
-“Given a user and a resource, is this action allowed?”
+---
 
-When this package makes sense
-✅ SaaS dashboards
-✅ Multi-role apps
-✅ B2B products
-✅ Apps with ownership rules
-✅ Teams larger than 1 developer
+## When this package makes sense
 
-When it’s overkill
-❌ Landing pages
-❌ Simple blogs
-❌ Apps with only admin / non-admin logic
+- ✅ SaaS dashboards
+- ✅ Multi-role applications
+- ✅ B2B products
+- ✅ Ownership-based rules
+- ✅ Teams larger than one developer
 
-Why this is worth publishing
-Most developers:
+---
 
-feel this pain
+## When it’s overkill
 
-write ad-hoc permission logic
+- ❌ Landing pages
+- ❌ Simple blogs
+- ❌ Apps with only admin / non-admin logic
 
-never extract it cleanly
+---
 
-This package:
+## Final summary
 
-gives a clear, repeatable pattern
+**React Ability solves one problem:**
 
-provides excellent TypeScript DX
+> How do I express and use permissions in React without scattering fragile conditional logic everywhere?
 
-keeps the API small and focused
+It does this by:
 
-That’s exactly what successful small libraries do.
+- centralizing permission rules
+- typing actions and resources
+- exposing a clean `can()` API
+- providing `<Can />` for UI rendering
 
-Final simplified summary
-This package solves one problem:
+---
 
-“How do I express and use permissions in React without scattering fragile conditional logic everywhere?”
+## Credits
 
-It solves it by:
-
-centralizing permission rules
-
-typing actions and resources
-
-exposing a clean can() API
-
-providing <Can /> for UI rendering
+Created by **Mohamed Ali Sraieb**
