@@ -1,6 +1,6 @@
 {
-  "name": "react-ability",
-  "version": "0.1.0",
+  "name": "react-ability-kit",
+  "version": "0.1.2",
   "private": false,
   "type": "module",
   "main": "./dist/index.cjs",
@@ -29,5 +29,6 @@
     "dev": "tsup --watch",
     "lint": "eslint .",
     "prepublishOnly": "npm run build"
-  }
+  },
+  "license": "MIT"
 }

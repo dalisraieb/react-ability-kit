@@ -1,17 +1,3 @@
-
-## Test on the Demo (Local Development)
-
-If you want to test the library locally before publishing it to npm, you can link it into a demo React app.
-
-### 1. Build the library
-
-From the root of the library project:
-
-```bash
-npm install
-npm run build
-```
-
 # React Ability
 
 A small, typed permission layer for React that keeps authorization logic **out of your components** and **in one place**.

@@ -1,5 +1,5 @@
 // app/ability.ts
-import { createAbilityKit, createReactAbilityKit } from "react-ability";
+import { createAbilityKit, createReactAbilityKit } from "react-ability-kit";
 
 export type Actions = "read" | "create" | "update" | "delete" | "manage";
 
