@@ -1,4 +1,4 @@
-# React Ability
+# React Ability Kit
 
 **A small, strongly-typed permission layer for React**  
 Keep authorization logic **out of your components** and **in one place**.
@@ -96,19 +96,19 @@ User ──► Policy ──► Ability ──► UI / Components
 ## Installation
 
 ```bash
-npm install react-ability
+npm install react-ability-kit
 ```
 
 or
 
 ```bash
-pnpm add react-ability
+pnpm add react-ability-kit
 ```
 
 or
 
 ```bash
-yarn add react-ability
+yarn add react-ability-kit
 ```
 
 ---
@@ -121,7 +121,7 @@ Create a single policy file.
 
 ```ts
 // ability.ts
-import { defineAbility } from "react-ability";
+import { defineAbility } from "react-ability-kit";
 
 export const ability = defineAbility((allow, deny, user) => {
   allow("read", "Invoice");
@@ -143,7 +143,7 @@ This file is your **single source of truth**.
 ### 2️⃣ Provide the ability to your app
 
 ```tsx
-import { AbilityProvider } from "react-ability";
+import { AbilityProvider } from "react-ability-kit";
 import { ability } from "./ability";
 
 export function App() {
@@ -335,7 +335,7 @@ It answers one question only:
 
 ## Final summary
 
-**React Ability solves one problem:**
+**React Ability Kit solves one problem:**
 
 > How do I express and use permissions in React without scattering fragile conditional logic everywhere?
 
