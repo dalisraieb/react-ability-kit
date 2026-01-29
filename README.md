@@ -9,6 +9,12 @@ Keep authorization logic **out of your components** and **in one place**.
 
 Most React apps don’t plan to become permission nightmares — they just grow into one.
 
+Permissions slowly spread across components as ad-hoc checks:
+
+- `if (user.role === "admin")`
+- `if (invoice.ownerId === user.id)`
+- `if (permissions.includes("invoice:update"))`
+
 This package introduces a **policy-first** approach to permissions, so your UI stays clean and your rules stay auditable.
 
 ---
@@ -50,9 +56,9 @@ if (user && user.role !== "guest") {
 
 ### Problems this creates
 
-- ❌ **Logic duplication** – same rules rewritten in different places
-- ❌ **Rules drift** – one condition changes, others don’t
-- ❌ **Impossible to audit** – “Who can edit invoices?” → grep the whole repo
+- ❌ **Logic duplication** – same rules rewritten in different places  
+- ❌ **Rules drift** – one condition changes, others don’t  
+- ❌ **Impossible to audit** – “Who can edit invoices?” → grep the whole repo  
 - ❌ **UI inconsistencies**
   - Button visible but API rejects
   - Button hidden but API allows
@@ -87,21 +93,100 @@ User ──► Policy ──► Ability ──► UI / Components
 
 ---
 
+## Installation
+
+```bash
+npm install react-ability
+```
+
+or
+
+```bash
+pnpm add react-ability
+```
+
+or
+
+```bash
+yarn add react-ability
+```
+
+---
+
+## Quick start (5 minutes)
+
+### 1️⃣ Define your abilities (policy-first)
+
+Create a single policy file.
+
+```ts
+// ability.ts
+import { defineAbility } from "react-ability";
+
+export const ability = defineAbility((allow, deny, user) => {
+  allow("read", "Invoice");
+
+  allow(
+    "update",
+    "Invoice",
+    invoice => invoice.ownerId === user.id && invoice.status === "draft"
+  );
+
+  deny("delete", "Invoice");
+});
+```
+
+This file is your **single source of truth**.
+
+---
+
+### 2️⃣ Provide the ability to your app
+
+```tsx
+import { AbilityProvider } from "react-ability";
+import { ability } from "./ability";
+
+export function App() {
+  return (
+    <AbilityProvider ability={ability}>
+      <YourApp />
+    </AbilityProvider>
+  );
+}
+```
+
+---
+
+### 3️⃣ Use permissions anywhere
+
+#### Using the `<Can />` component
+
+```tsx
+<Can I="update" a="Invoice" this={invoice}>
+  <EditButton />
+</Can>
+```
+
+#### Using the `can()` function
+
+```ts
+const canEdit = can("update", "Invoice", invoice);
+```
+
+---
+
 ## What this package actually solves
 
 ### 1️⃣ Single source of truth for permissions
 
 ```ts
-// policy.ts
 allow("update", "Invoice", invoice => invoice.ownerId === user.id);
 deny("delete", "Invoice");
 ```
 
-**Result**
-
 - All rules live in one place
 - Easy to review, change, and reason about
-- No more scattered conditions
+- No scattered conditionals
 
 ---
 
@@ -173,14 +258,6 @@ This removes an entire class of bugs.
 
 ### 5️⃣ Ownership rules become first-class
 
-❌ Scattered ownership checks
-
-```ts
-if (invoice.ownerId === user.id)
-```
-
-✅ Centralized ownership rule
-
 ```ts
 allow("update", "Invoice", invoice => invoice.ownerId === user.id);
 ```
@@ -195,17 +272,9 @@ Ownership logic is now:
 
 ### 6️⃣ Predictable SSR & hydration
 
-Without a system:
-
-- UI flickers
-- Buttons appear/disappear after hydration
-- Server/client logic diverges
-
-With **React Ability**:
-
-- Ability is built once from user data
-- Server and client agree on permissions
-- Stable, predictable rendering
+- No permission flicker
+- No server/client mismatch
+- Same rules, same result everywhere
 
 ---
 
@@ -215,15 +284,7 @@ It’s not magic.
 
 It simply means:
 
-> Render children **only if the permission passes**.
-
-Instead of:
-
-```tsx
-if (!canEdit) return null;
-```
-
-You write:
+> Render children **only if the permission passes**
 
 ```tsx
 <Can I="update" a="Invoice" this={invoice}>
@@ -268,7 +329,7 @@ It answers one question only:
 
 - ❌ Landing pages
 - ❌ Simple blogs
-- ❌ Apps with only admin / non-admin logic
+- ❌ Admin / non-admin only apps
 
 ---
 
