@@ -27,13 +27,6 @@ export default function Home() {
                                 </Link>
                             </div>
                             <LiveStats />
-                            <div className={styles.codePanel}>
-                                <pre>
-                                    <code>{`<Can I="delete" a="Invoice">
-  <DeleteButton />
-</Can>`}</code>
-                                </pre>
-                            </div>
                         </div>
                         <HeroRightPanel />
                     </div>

@@ -1,4 +1,6 @@
 .panel {
+  align-self: center;
+  height: auto;
   border: 1px solid var(--ifm-toc-border-color);
   border-radius: 18px;
   padding: 1.2rem;
