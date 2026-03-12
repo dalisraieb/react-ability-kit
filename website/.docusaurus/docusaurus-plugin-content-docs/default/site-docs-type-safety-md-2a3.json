@@ -1,0 +1,27 @@
+{
+  "id": "type-safety",
+  "title": "Type Safety",
+  "description": "The library is designed for strict TypeScript usage.",
+  "source": "@site/docs/type-safety.md",
+  "sourceDirName": ".",
+  "slug": "/type-safety",
+  "permalink": "/react-ability-kit/docs/type-safety",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/type-safety.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "type-safety",
+    "title": "Type Safety"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Ownership Rules",
+    "permalink": "/react-ability-kit/docs/ownership-rules"
+  },
+  "next": {
+    "title": "SSR Support",
+    "permalink": "/react-ability-kit/docs/ssr-support"
+  }
+}

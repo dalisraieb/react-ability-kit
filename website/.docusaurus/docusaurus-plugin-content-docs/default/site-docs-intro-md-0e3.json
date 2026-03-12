@@ -1,0 +1,24 @@
+{
+  "id": "intro",
+  "title": "Overview",
+  "description": "react-ability-kit is a TypeScript-first authorization library for React apps.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/react-ability-kit/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "intro",
+    "title": "Overview",
+    "slug": "/"
+  },
+  "sidebar": "docsSidebar",
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/react-ability-kit/docs/getting-started"
+  }
+}

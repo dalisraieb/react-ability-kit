@@ -1,0 +1,123 @@
+{
+  "/react-ability-kit/__docusaurus/debug-84b": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docusaurus-debugb-38-a1b"
+    }
+  },
+  "/react-ability-kit/__docusaurus/debug/config-e2f": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docusaurus-debugb-38-a1b"
+    }
+  },
+  "/react-ability-kit/__docusaurus/debug/content-740": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docusaurus-debugb-38-a1b"
+    },
+    "__props": "__props---react-ability-kit-docusaurus-debug-contentb-21-670"
+  },
+  "/react-ability-kit/__docusaurus/debug/globalData-cdd": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docusaurus-debugb-38-a1b"
+    }
+  },
+  "/react-ability-kit/__docusaurus/debug/metadata-d40": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docusaurus-debugb-38-a1b"
+    }
+  },
+  "/react-ability-kit/__docusaurus/debug/registry-2b8": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docusaurus-debugb-38-a1b"
+    }
+  },
+  "/react-ability-kit/__docusaurus/debug/routes-058": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docusaurus-debugb-38-a1b"
+    }
+  },
+  "/react-ability-kit/search-098": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-search-138-86a"
+    }
+  },
+  "/react-ability-kit/docs-bba": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-docsaba-fce"
+    }
+  },
+  "/react-ability-kit/docs-6c0": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---react-ability-kit-docsf-66-819"
+  },
+  "/react-ability-kit/docs-543": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/react-ability-kit/docs/-444": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-0-e-3-51a"
+  },
+  "/react-ability-kit/docs/best-practices-959": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-best-practicese-4-d-69e"
+  },
+  "/react-ability-kit/docs/creating-an-ability-e13": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-creating-an-ability-85-e-db9"
+  },
+  "/react-ability-kit/docs/defining-policies-243": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-defining-policies-1-f-1-4b9"
+  },
+  "/react-ability-kit/docs/demo-6e1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-demo-804-d24"
+  },
+  "/react-ability-kit/docs/faq-a23": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-faq-048-d4e"
+  },
+  "/react-ability-kit/docs/getting-started-8e2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-getting-startedd-58-828"
+  },
+  "/react-ability-kit/docs/ownership-rules-3db": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-ownership-rulescc-4-37f"
+  },
+  "/react-ability-kit/docs/react-integration-43e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-react-integration-4-ab-83b"
+  },
+  "/react-ability-kit/docs/real-world-example-6d3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-real-world-examplef-50-203"
+  },
+  "/react-ability-kit/docs/ssr-support-4a0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-ssr-support-80-f-cb5"
+  },
+  "/react-ability-kit/docs/type-safety-248": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-type-safety-2-a-3-ca2"
+  },
+  "/react-ability-kit/docs/using-can-function-b7c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---react-ability-kit-docs-using-can-function-09-e-8f5"
+  },
+  "/react-ability-kit/-3e2": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---react-ability-kit-a-74-5c6"
+    },
+    "config": "config---react-ability-kit-5-e-9-8d4"
+  }
+}

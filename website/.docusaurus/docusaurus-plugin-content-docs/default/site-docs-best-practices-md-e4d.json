@@ -1,0 +1,27 @@
+{
+  "id": "best-practices",
+  "title": "Best Practices",
+  "description": "- Keep all policies in one dedicated module.",
+  "source": "@site/docs/best-practices.md",
+  "sourceDirName": ".",
+  "slug": "/best-practices",
+  "permalink": "/react-ability-kit/docs/best-practices",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/best-practices.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "best-practices",
+    "title": "Best Practices"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Real World Example",
+    "permalink": "/react-ability-kit/docs/real-world-example"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/react-ability-kit/docs/faq"
+  }
+}

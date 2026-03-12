@@ -1,0 +1,27 @@
+{
+  "id": "using-can-function",
+  "title": "Using the can() Function",
+  "description": "In component logic, use useAbility() and call can() directly.",
+  "source": "@site/docs/using-can-function.md",
+  "sourceDirName": ".",
+  "slug": "/using-can-function",
+  "permalink": "/react-ability-kit/docs/using-can-function",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/using-can-function.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "using-can-function",
+    "title": "Using the can() Function"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "React Integration",
+    "permalink": "/react-ability-kit/docs/react-integration"
+  },
+  "next": {
+    "title": "Ownership Rules",
+    "permalink": "/react-ability-kit/docs/ownership-rules"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "creating-an-ability",
+  "title": "Creating an Ability",
+  "description": "After defining your rules, create an ability object.",
+  "source": "@site/docs/creating-an-ability.md",
+  "sourceDirName": ".",
+  "slug": "/creating-an-ability",
+  "permalink": "/react-ability-kit/docs/creating-an-ability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/creating-an-ability.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "creating-an-ability",
+    "title": "Creating an Ability"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Defining Policies",
+    "permalink": "/react-ability-kit/docs/defining-policies"
+  },
+  "next": {
+    "title": "React Integration",
+    "permalink": "/react-ability-kit/docs/react-integration"
+  }
+}

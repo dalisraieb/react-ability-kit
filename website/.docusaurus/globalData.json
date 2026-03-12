@@ -1,0 +1,93 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/react-ability-kit/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/react-ability-kit/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "best-practices",
+              "path": "/react-ability-kit/docs/best-practices",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "creating-an-ability",
+              "path": "/react-ability-kit/docs/creating-an-ability",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "defining-policies",
+              "path": "/react-ability-kit/docs/defining-policies",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "demo",
+              "path": "/react-ability-kit/docs/demo",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "faq",
+              "path": "/react-ability-kit/docs/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started",
+              "path": "/react-ability-kit/docs/getting-started",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/react-ability-kit/docs/",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "ownership-rules",
+              "path": "/react-ability-kit/docs/ownership-rules",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "react-integration",
+              "path": "/react-ability-kit/docs/react-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "real-world-example",
+              "path": "/react-ability-kit/docs/real-world-example",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "ssr-support",
+              "path": "/react-ability-kit/docs/ssr-support",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "type-safety",
+              "path": "/react-ability-kit/docs/type-safety",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "using-can-function",
+              "path": "/react-ability-kit/docs/using-can-function",
+              "sidebar": "docsSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docsSidebar": {
+              "link": {
+                "path": "/react-ability-kit/docs/",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

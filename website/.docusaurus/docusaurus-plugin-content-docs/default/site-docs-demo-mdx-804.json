@@ -1,0 +1,23 @@
+{
+  "id": "demo",
+  "title": "Demo Page",
+  "description": "Use this interactive sandbox to see role and ownership rules in action.",
+  "source": "@site/docs/demo.mdx",
+  "sourceDirName": ".",
+  "slug": "/demo",
+  "permalink": "/react-ability-kit/docs/demo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/demo.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "demo",
+    "title": "Demo Page"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/react-ability-kit/docs/faq"
+  }
+}

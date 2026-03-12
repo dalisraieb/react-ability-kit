@@ -1,0 +1,27 @@
+{
+  "id": "react-integration",
+  "title": "React Integration",
+  "description": "react-ability-kit includes primitives to wire authorization into React:",
+  "source": "@site/docs/react-integration.md",
+  "sourceDirName": ".",
+  "slug": "/react-integration",
+  "permalink": "/react-ability-kit/docs/react-integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/react-integration.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "react-integration",
+    "title": "React Integration"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Creating an Ability",
+    "permalink": "/react-ability-kit/docs/creating-an-ability"
+  },
+  "next": {
+    "title": "Using the can() Function",
+    "permalink": "/react-ability-kit/docs/using-can-function"
+  }
+}

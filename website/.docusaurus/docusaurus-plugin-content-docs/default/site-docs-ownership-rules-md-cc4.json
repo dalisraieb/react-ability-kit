@@ -1,0 +1,27 @@
+{
+  "id": "ownership-rules",
+  "title": "Ownership Rules",
+  "description": "Ownership checks are one of the most common SaaS authorization patterns.",
+  "source": "@site/docs/ownership-rules.md",
+  "sourceDirName": ".",
+  "slug": "/ownership-rules",
+  "permalink": "/react-ability-kit/docs/ownership-rules",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/ownership-rules.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "ownership-rules",
+    "title": "Ownership Rules"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Using the can() Function",
+    "permalink": "/react-ability-kit/docs/using-can-function"
+  },
+  "next": {
+    "title": "Type Safety",
+    "permalink": "/react-ability-kit/docs/type-safety"
+  }
+}

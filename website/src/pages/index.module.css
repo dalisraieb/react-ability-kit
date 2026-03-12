@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5.5rem 0 4rem;
+  background:
+    radial-gradient(80rem 35rem at -20% -20%, rgba(30, 132, 242, 0.18), transparent 60%),
+    radial-gradient(80rem 35rem at 120% 10%, rgba(31, 201, 153, 0.18), transparent 55%),
+    linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.title {
+  max-width: 13ch;
+  margin: 0.6rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.subtitle {
+  max-width: 62ch;
+  margin: 0;
+  font-size: 1.08rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.codePanel {
+  margin-top: 1.8rem;
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 16px;
+  padding: 1rem;
+  max-width: 32rem;
+  background: #0f172a;
+  box-shadow: 0 16px 40px rgba(2, 8, 20, 0.25);
+}
+
+.codePanel pre {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.codePanel code {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .hero {
+  background:
+    radial-gradient(80rem 35rem at -20% -20%, rgba(26, 119, 221, 0.25), transparent 60%),
+    radial-gradient(80rem 35rem at 120% 10%, rgba(26, 177, 136, 0.22), transparent 55%),
+    linear-gradient(180deg, #0b1222 0%, #0f172a 100%);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 4.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}

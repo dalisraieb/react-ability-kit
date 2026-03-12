@@ -1,0 +1,27 @@
+{
+  "id": "defining-policies",
+  "title": "Defining Policies",
+  "description": "Policies are where you define authorization rules for actions and subjects.",
+  "source": "@site/docs/defining-policies.md",
+  "sourceDirName": ".",
+  "slug": "/defining-policies",
+  "permalink": "/react-ability-kit/docs/defining-policies",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/defining-policies.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "defining-policies",
+    "title": "Defining Policies"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/react-ability-kit/docs/getting-started"
+  },
+  "next": {
+    "title": "Creating an Ability",
+    "permalink": "/react-ability-kit/docs/creating-an-ability"
+  }
+}

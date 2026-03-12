@@ -1,0 +1,27 @@
+{
+  "id": "faq",
+  "title": "FAQ",
+  "description": "Does this replace backend authorization?",
+  "source": "@site/docs/faq.md",
+  "sourceDirName": ".",
+  "slug": "/faq",
+  "permalink": "/react-ability-kit/docs/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/faq.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "faq",
+    "title": "FAQ"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Best Practices",
+    "permalink": "/react-ability-kit/docs/best-practices"
+  },
+  "next": {
+    "title": "Demo Page",
+    "permalink": "/react-ability-kit/docs/demo"
+  }
+}

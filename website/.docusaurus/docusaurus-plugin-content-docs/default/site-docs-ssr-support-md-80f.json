@@ -1,0 +1,27 @@
+{
+  "id": "ssr-support",
+  "title": "SSR Support",
+  "description": "For frameworks like Next.js, create ability from the same user payload on server and client.",
+  "source": "@site/docs/ssr-support.md",
+  "sourceDirName": ".",
+  "slug": "/ssr-support",
+  "permalink": "/react-ability-kit/docs/ssr-support",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/ssr-support.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "ssr-support",
+    "title": "SSR Support"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Type Safety",
+    "permalink": "/react-ability-kit/docs/type-safety"
+  },
+  "next": {
+    "title": "Real World Example",
+    "permalink": "/react-ability-kit/docs/real-world-example"
+  }
+}

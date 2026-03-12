@@ -1,0 +1,27 @@
+{
+  "id": "real-world-example",
+  "title": "Real World Example",
+  "description": "Simple SaaS model:",
+  "source": "@site/docs/real-world-example.md",
+  "sourceDirName": ".",
+  "slug": "/real-world-example",
+  "permalink": "/react-ability-kit/docs/real-world-example",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/real-world-example.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "real-world-example",
+    "title": "Real World Example"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "SSR Support",
+    "permalink": "/react-ability-kit/docs/ssr-support"
+  },
+  "next": {
+    "title": "Best Practices",
+    "permalink": "/react-ability-kit/docs/best-practices"
+  }
+}

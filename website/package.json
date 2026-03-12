@@ -1,0 +1,32 @@
+{
+    "name": "react-ability-kit-docs",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "docusaurus start",
+        "build": "docusaurus build",
+        "swizzle": "docusaurus swizzle",
+        "deploy": "docusaurus deploy",
+        "clear": "docusaurus clear",
+        "serve": "docusaurus serve",
+        "write-translations": "docusaurus write-translations",
+        "write-heading-ids": "docusaurus write-heading-ids"
+    },
+    "dependencies": {
+        "@docusaurus/core": "3.9.2",
+        "@docusaurus/preset-classic": "3.9.2",
+        "@easyops-cn/docusaurus-search-local": "^0.46.0",
+        "clsx": "^2.1.1",
+        "prism-react-renderer": "^2.4.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@docusaurus/module-type-aliases": "3.9.2",
+        "@docusaurus/tsconfig": "3.9.2",
+        "@types/node": "^20.17.6"
+    },
+    "engines": {
+        "node": ">=18.0"
+    }
+}

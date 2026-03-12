@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+:root {
+  --ifm-color-primary: #1d4ed8;
+  --ifm-color-primary-dark: #1b46c2;
+  --ifm-color-primary-darker: #173ca8;
+  --ifm-color-primary-darkest: #14358f;
+  --ifm-color-primary-light: #2b5de0;
+  --ifm-color-primary-lighter: #3a69e5;
+  --ifm-color-primary-lightest: #5f85ea;
+  --ifm-background-color: #ffffff;
+  --ifm-font-family-base: "Outfit", "Segoe UI", sans-serif;
+  --ifm-font-family-monospace: "JetBrains Mono", ui-monospace, monospace;
+  --ifm-code-font-size: 92%;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #4ea2ff;
+  --ifm-color-primary-dark: #2f91ff;
+  --ifm-color-primary-darker: #2288ff;
+  --ifm-color-primary-darkest: #0074f4;
+  --ifm-color-primary-light: #6db3ff;
+  --ifm-color-primary-lighter: #7cbbff;
+  --ifm-color-primary-lightest: #abd4ff;
+  --ifm-background-color: #0f172a;
+}
+
+.navbar {
+  -webkit-backdrop-filter: saturate(150%) blur(8px);
+  backdrop-filter: saturate(150%) blur(8px);
+}
+
+.markdown > h1,
+.markdown > h2,
+.markdown > h3 {
+  letter-spacing: -0.02em;
+}
+
+.theme-doc-markdown pre {
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 12px;
+}
+
+.pagination-nav {
+  gap: 0.8rem;
+}

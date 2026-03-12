@@ -1,0 +1,25 @@
+---
+id: demo
+title: Demo Page
+---
+
+import PermissionDemo from "@site/src/components/PermissionDemo";
+
+Use this interactive sandbox to see role and ownership rules in action.
+
+- Switch between `admin` and `member`
+- Toggle whether the invoice belongs to the current user
+- See how buttons are enabled/disabled from policy logic
+
+<PermissionDemo />
+
+## Example policy represented by this demo
+
+```ts
+if (user.role === "admin") {
+  allow("manage", "Invoice");
+} else {
+  allow("update", "Invoice", (invoice) => invoice.ownerId === user.id);
+  deny("delete", "Invoice");
+}
+```
