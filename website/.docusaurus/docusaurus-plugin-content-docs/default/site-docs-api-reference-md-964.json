@@ -1,0 +1,27 @@
+{
+  "id": "api-reference",
+  "title": "API Reference",
+  "description": "This page lists the public API exported by react-ability-kit.",
+  "source": "@site/docs/api-reference.md",
+  "sourceDirName": ".",
+  "slug": "/api-reference",
+  "permalink": "/react-ability-kit/docs/api-reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/api-reference.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "api-reference",
+    "title": "API Reference"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "SaaS Dashboard Example",
+    "permalink": "/react-ability-kit/docs/real-world-example"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/react-ability-kit/docs/faq"
+  }
+}

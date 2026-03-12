@@ -1,0 +1,27 @@
+{
+  "id": "quick-start",
+  "title": "Quick Start",
+  "description": "This guide shows how to add typed permissions to a React application using react-ability-kit in a few minutes.",
+  "source": "@site/docs/quick-start.md",
+  "sourceDirName": ".",
+  "slug": "/quick-start",
+  "permalink": "/react-ability-kit/docs/quick-start",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/quick-start.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "quick-start",
+    "title": "Quick Start"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/react-ability-kit/docs/"
+  },
+  "next": {
+    "title": "Defining Permissions Vocabulary",
+    "permalink": "/react-ability-kit/docs/defining-permission-vocabulary"
+  }
+}

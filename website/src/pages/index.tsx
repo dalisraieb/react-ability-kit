@@ -13,20 +13,20 @@ export default function Home() {
                     <div className={styles.heroContent}>
                         <div>
                             <p className={styles.kicker}>react-ability-kit</p>
+                            <LiveStats />
                             <h1 className={styles.title}>Type-Safe Permissions for React</h1>
                             <p className={styles.subtitle}>
                                 A small library that centralizes permission logic and keeps
                                 authorization out of your components.
                             </p>
                             <div className={styles.actions}>
-                                <Link className="button button--primary button--lg" to="/docs/getting-started">
+                                <Link className="button button--primary button--lg" to="/docs/quick-start">
                                     Get Started
                                 </Link>
                                 <Link className="button button--secondary button--lg" to="/docs/demo">
                                     View Demo
                                 </Link>
                             </div>
-                            <LiveStats />
                         </div>
                         <HeroRightPanel />
                     </div>

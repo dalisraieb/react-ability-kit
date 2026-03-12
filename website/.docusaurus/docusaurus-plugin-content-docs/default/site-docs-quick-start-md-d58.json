@@ -1,19 +1,19 @@
 {
-  "id": "getting-started",
-  "title": "Getting Started",
+  "id": "quick-start",
+  "title": "Quick Start",
   "description": "Install the package:",
-  "source": "@site/docs/getting-started.md",
+  "source": "@site/docs/quick-start.md",
   "sourceDirName": ".",
-  "slug": "/getting-started",
-  "permalink": "/react-ability-kit/docs/getting-started",
+  "slug": "/quick-start",
+  "permalink": "/react-ability-kit/docs/quick-start",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/getting-started.md",
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/quick-start.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "getting-started",
-    "title": "Getting Started"
+    "id": "quick-start",
+    "title": "Quick Start"
   },
   "sidebar": "docsSidebar",
   "previous": {

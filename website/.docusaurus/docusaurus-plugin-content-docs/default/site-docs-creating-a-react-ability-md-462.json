@@ -1,0 +1,24 @@
+{
+  "id": "creating-a-react-ability",
+  "title": "creating-a-react-ability",
+  "description": "",
+  "source": "@site/docs/creating-a-react-ability.md",
+  "sourceDirName": ".",
+  "slug": "/creating-a-react-ability",
+  "permalink": "/react-ability-kit/docs/creating-a-react-ability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/creating-a-react-ability.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Creating an Ability",
+    "permalink": "/react-ability-kit/docs/creating-an-ability"
+  },
+  "next": {
+    "title": "React Integration",
+    "permalink": "/react-ability-kit/docs/react-integration"
+  }
+}

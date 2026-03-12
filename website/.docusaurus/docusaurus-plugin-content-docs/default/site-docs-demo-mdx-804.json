@@ -14,10 +14,5 @@
   "frontMatter": {
     "id": "demo",
     "title": "Demo Page"
-  },
-  "sidebar": "docsSidebar",
-  "previous": {
-    "title": "FAQ",
-    "permalink": "/react-ability-kit/docs/faq"
   }
 }

@@ -14,14 +14,5 @@
   "frontMatter": {
     "id": "ownership-rules",
     "title": "Ownership Rules"
-  },
-  "sidebar": "docsSidebar",
-  "previous": {
-    "title": "Using the can() Function",
-    "permalink": "/react-ability-kit/docs/using-can-function"
-  },
-  "next": {
-    "title": "Type Safety",
-    "permalink": "/react-ability-kit/docs/type-safety"
   }
 }

@@ -10,6 +10,9 @@ react-ability-kit includes primitives to wire authorization into React:
 - `Can`
 
 ```tsx
+import { reactAbilityKit, ability } from "@/lib/ability.ts"
+const { AbilityProvider, Can } = reactAbilityKit;
+
 <AbilityProvider ability={ability}>
   <Can I="update" a="Invoice" this={invoice}>
     <EditButton />

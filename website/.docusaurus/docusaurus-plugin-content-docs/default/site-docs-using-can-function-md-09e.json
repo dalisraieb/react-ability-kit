@@ -14,14 +14,5 @@
   "frontMatter": {
     "id": "using-can-function",
     "title": "Using the can() Function"
-  },
-  "sidebar": "docsSidebar",
-  "previous": {
-    "title": "React Integration",
-    "permalink": "/react-ability-kit/docs/react-integration"
-  },
-  "next": {
-    "title": "Ownership Rules",
-    "permalink": "/react-ability-kit/docs/ownership-rules"
   }
 }

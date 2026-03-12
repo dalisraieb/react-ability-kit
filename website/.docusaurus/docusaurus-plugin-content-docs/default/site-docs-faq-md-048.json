@@ -17,11 +17,7 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Best Practices",
-    "permalink": "/react-ability-kit/docs/best-practices"
-  },
-  "next": {
-    "title": "Demo Page",
-    "permalink": "/react-ability-kit/docs/demo"
+    "title": "API Reference",
+    "permalink": "/react-ability-kit/docs/api-reference"
   }
 }

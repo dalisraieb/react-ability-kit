@@ -83,21 +83,21 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "React Ability Kit documentation",
           "items": [
             {
-              "label": "Getting Started",
-              "to": "/docs/getting-started"
-            },
-            {
-              "label": "React Integration",
-              "to": "/docs/react-integration"
+              "label": "Documentation",
+              "to": "/docs/quick-start"
             }
           ]
         },
         {
-          "title": "Community",
+          "title": "Links",
           "items": [
+            {
+              "label": "Documentation",
+              "to": "/docs/"
+            },
             {
               "label": "GitHub",
               "href": "https://github.com/dalisraieb/react-ability-kit"
@@ -109,7 +109,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright 2026 react-ability-kit."
+      "copyright": "Created by Mohamed Ali Sraieb"
     },
     "prism": {
       "theme": {

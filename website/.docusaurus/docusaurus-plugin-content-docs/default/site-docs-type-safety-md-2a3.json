@@ -14,14 +14,5 @@
   "frontMatter": {
     "id": "type-safety",
     "title": "Type Safety"
-  },
-  "sidebar": "docsSidebar",
-  "previous": {
-    "title": "Ownership Rules",
-    "permalink": "/react-ability-kit/docs/ownership-rules"
-  },
-  "next": {
-    "title": "SSR Support",
-    "permalink": "/react-ability-kit/docs/ssr-support"
   }
 }

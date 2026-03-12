@@ -1,7 +1,7 @@
 {
   "id": "defining-policies",
   "title": "Defining Policies",
-  "description": "Policies are where you define authorization rules for actions and subjects.",
+  "description": "Create polices.ts file, Policies are where you define authorization rules for actions and subjects.",
   "source": "@site/docs/defining-policies.md",
   "sourceDirName": ".",
   "slug": "/defining-policies",
@@ -17,8 +17,8 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Getting Started",
-    "permalink": "/react-ability-kit/docs/getting-started"
+    "title": "Defining Permissions Vocabulary",
+    "permalink": "/react-ability-kit/docs/defining-permission-vocabulary"
   },
   "next": {
     "title": "Creating an Ability",

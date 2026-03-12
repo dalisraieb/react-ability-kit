@@ -17,11 +17,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "SSR Support",
-    "permalink": "/react-ability-kit/docs/ssr-support"
+    "title": "React Integration",
+    "permalink": "/react-ability-kit/docs/react-integration"
   },
   "next": {
-    "title": "Best Practices",
-    "permalink": "/react-ability-kit/docs/best-practices"
+    "title": "API Reference",
+    "permalink": "/react-ability-kit/docs/api-reference"
   }
 }

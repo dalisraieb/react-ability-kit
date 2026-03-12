@@ -6,7 +6,7 @@ title: Creating an Ability
 After defining your rules, create an ability object.
 
 ```ts
-const ability = createAbility(rules);
+const ability = createAbility<Actions, SubjectsMap>(rules);
 ```
 
 Use `can()` to evaluate permissions:

@@ -1,15 +1,9 @@
 ---
-id: getting-started
-title: Getting Started
+id: defining-permission-vocabulary
+title: Defining Permission Vocabulary
 ---
 
-Install the package:
-
-```bash
-npm install react-ability-kit
-```
-
-Define your permission vocabulary first.
+Define your permission vocabulary first
 
 ```ts
 type Actions = "read" | "create" | "update" | "delete" | "manage";
@@ -23,10 +17,10 @@ type SubjectsMap = {
 Create your ability kit:
 
 ```ts
-import { createAbilityKit } from "react-ability-kit";
+import { createAbilityKit, createReactAbilityKit } from "react-ability-kit";
 
+const reactAbilityKit = createReactAbilityKit<Actions, SubjectsMap>();
 const abilityKit = createAbilityKit<Actions, SubjectsMap>();
-const { defineRules, createAbility } = abilityKit;
 ```
 
 At this point, you can define rules and build an ability object for the current user.

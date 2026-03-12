@@ -3,7 +3,7 @@ id: defining-policies
 title: Defining Policies
 ---
 
-Policies are where you define authorization rules for actions and subjects.
+Create `polices.ts` file, Policies are where you define authorization rules for actions and subjects.
 
 ```ts
 const rules = defineRules((allow, deny) => {

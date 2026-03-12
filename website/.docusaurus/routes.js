@@ -3,56 +3,21 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/react-ability-kit/__docusaurus/debug',
-    component: ComponentCreator('/react-ability-kit/__docusaurus/debug', '84b'),
-    exact: true
-  },
-  {
-    path: '/react-ability-kit/__docusaurus/debug/config',
-    component: ComponentCreator('/react-ability-kit/__docusaurus/debug/config', 'e2f'),
-    exact: true
-  },
-  {
-    path: '/react-ability-kit/__docusaurus/debug/content',
-    component: ComponentCreator('/react-ability-kit/__docusaurus/debug/content', '740'),
-    exact: true
-  },
-  {
-    path: '/react-ability-kit/__docusaurus/debug/globalData',
-    component: ComponentCreator('/react-ability-kit/__docusaurus/debug/globalData', 'cdd'),
-    exact: true
-  },
-  {
-    path: '/react-ability-kit/__docusaurus/debug/metadata',
-    component: ComponentCreator('/react-ability-kit/__docusaurus/debug/metadata', 'd40'),
-    exact: true
-  },
-  {
-    path: '/react-ability-kit/__docusaurus/debug/registry',
-    component: ComponentCreator('/react-ability-kit/__docusaurus/debug/registry', '2b8'),
-    exact: true
-  },
-  {
-    path: '/react-ability-kit/__docusaurus/debug/routes',
-    component: ComponentCreator('/react-ability-kit/__docusaurus/debug/routes', '058'),
-    exact: true
-  },
-  {
     path: '/react-ability-kit/search',
     component: ComponentCreator('/react-ability-kit/search', '098'),
     exact: true
   },
   {
     path: '/react-ability-kit/docs',
-    component: ComponentCreator('/react-ability-kit/docs', 'bba'),
+    component: ComponentCreator('/react-ability-kit/docs', '9c9'),
     routes: [
       {
         path: '/react-ability-kit/docs',
-        component: ComponentCreator('/react-ability-kit/docs', '6c0'),
+        component: ComponentCreator('/react-ability-kit/docs', 'cb2'),
         routes: [
           {
             path: '/react-ability-kit/docs',
-            component: ComponentCreator('/react-ability-kit/docs', '543'),
+            component: ComponentCreator('/react-ability-kit/docs', '826'),
             routes: [
               {
                 path: '/react-ability-kit/docs/',
@@ -61,14 +26,25 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/react-ability-kit/docs/best-practices',
-                component: ComponentCreator('/react-ability-kit/docs/best-practices', '959'),
+                path: '/react-ability-kit/docs/api-reference',
+                component: ComponentCreator('/react-ability-kit/docs/api-reference', '4e0'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
+                path: '/react-ability-kit/docs/best-practices',
+                component: ComponentCreator('/react-ability-kit/docs/best-practices', '96d'),
+                exact: true
+              },
+              {
                 path: '/react-ability-kit/docs/creating-an-ability',
                 component: ComponentCreator('/react-ability-kit/docs/creating-an-ability', 'e13'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/react-ability-kit/docs/defining-permission-vocabulary',
+                component: ComponentCreator('/react-ability-kit/docs/defining-permission-vocabulary', '257'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -80,9 +56,8 @@ export default [
               },
               {
                 path: '/react-ability-kit/docs/demo',
-                component: ComponentCreator('/react-ability-kit/docs/demo', '6e1'),
-                exact: true,
-                sidebar: "docsSidebar"
+                component: ComponentCreator('/react-ability-kit/docs/demo', 'a1a'),
+                exact: true
               },
               {
                 path: '/react-ability-kit/docs/faq',
@@ -91,14 +66,13 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/react-ability-kit/docs/getting-started',
-                component: ComponentCreator('/react-ability-kit/docs/getting-started', '8e2'),
-                exact: true,
-                sidebar: "docsSidebar"
+                path: '/react-ability-kit/docs/ownership-rules',
+                component: ComponentCreator('/react-ability-kit/docs/ownership-rules', '06f'),
+                exact: true
               },
               {
-                path: '/react-ability-kit/docs/ownership-rules',
-                component: ComponentCreator('/react-ability-kit/docs/ownership-rules', '3db'),
+                path: '/react-ability-kit/docs/quick-start',
+                component: ComponentCreator('/react-ability-kit/docs/quick-start', '1e1'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -116,21 +90,18 @@ export default [
               },
               {
                 path: '/react-ability-kit/docs/ssr-support',
-                component: ComponentCreator('/react-ability-kit/docs/ssr-support', '4a0'),
-                exact: true,
-                sidebar: "docsSidebar"
+                component: ComponentCreator('/react-ability-kit/docs/ssr-support', '582'),
+                exact: true
               },
               {
                 path: '/react-ability-kit/docs/type-safety',
-                component: ComponentCreator('/react-ability-kit/docs/type-safety', '248'),
-                exact: true,
-                sidebar: "docsSidebar"
+                component: ComponentCreator('/react-ability-kit/docs/type-safety', 'dcc'),
+                exact: true
               },
               {
                 path: '/react-ability-kit/docs/using-can-function',
-                component: ComponentCreator('/react-ability-kit/docs/using-can-function', 'b7c'),
-                exact: true,
-                sidebar: "docsSidebar"
+                component: ComponentCreator('/react-ability-kit/docs/using-can-function', '95d'),
+                exact: true
               }
             ]
           }

@@ -1,0 +1,27 @@
+{
+  "id": "details/defining-permission-vocabulary",
+  "title": "Defining Permission Vocabulary",
+  "description": "Define your permission vocabulary first",
+  "source": "@site/docs/details/defining-permission-vocabulary.md",
+  "sourceDirName": "details",
+  "slug": "/details/defining-permission-vocabulary",
+  "permalink": "/react-ability-kit/docs/details/defining-permission-vocabulary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dalisraieb/react-ability-kit/tree/main/website/docs/details/defining-permission-vocabulary.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "defining-permission-vocabulary",
+    "title": "Defining Permission Vocabulary"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Quick Start",
+    "permalink": "/react-ability-kit/docs/quick-start"
+  },
+  "next": {
+    "title": "Defining Policies",
+    "permalink": "/react-ability-kit/docs/defining-policies"
+  }
+}

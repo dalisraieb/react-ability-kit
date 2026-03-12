@@ -14,14 +14,5 @@
   "frontMatter": {
     "id": "ssr-support",
     "title": "SSR Support"
-  },
-  "sidebar": "docsSidebar",
-  "previous": {
-    "title": "Type Safety",
-    "permalink": "/react-ability-kit/docs/type-safety"
-  },
-  "next": {
-    "title": "Real World Example",
-    "permalink": "/react-ability-kit/docs/real-world-example"
   }
 }
