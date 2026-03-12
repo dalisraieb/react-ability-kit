@@ -9,6 +9,13 @@
   border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
+.heroContent {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
 .kicker {
   margin: 0;
   font-size: 0.82rem;
@@ -68,6 +75,11 @@
 @media (max-width: 768px) {
   .hero {
     padding-top: 4.5rem;
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
   }
 
   .subtitle {
