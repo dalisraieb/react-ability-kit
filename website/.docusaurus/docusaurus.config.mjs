@@ -31,6 +31,10 @@ export default {
         "blog": false,
         "theme": {
           "customCss": "./src/css/custom.css"
+        },
+        "gtag": {
+          "trackingID": "G-DP7EEF3KGD",
+          "anonymizeIP": true
         }
       }
     ]
