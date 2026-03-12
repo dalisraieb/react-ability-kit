@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F172A" />
+  <circle cx="1070" cy="100" r="220" fill="#1D4ED8" fill-opacity="0.25" />
+  <circle cx="130" cy="580" r="260" fill="#0EA5A6" fill-opacity="0.2" />
+  <rect x="80" y="110" width="120" height="120" rx="24" fill="url(#logo)" />
+  <path d="M112 148H140C156.569 148 170 161.431 170 178V202H152V182C152 172.059 143.941 164 134 164H112V148Z" fill="white" />
+  <path d="M176 148H158V166H176V148Z" fill="#A7F3D0" />
+  <text x="230" y="170" fill="white" font-size="56" font-family="Segoe UI, Arial, sans-serif" font-weight="700">react-ability-kit</text>
+  <text x="230" y="245" fill="#BFDBFE" font-size="38" font-family="Segoe UI, Arial, sans-serif">Type-Safe Permissions for React</text>
+  <text x="84" y="360" fill="#CBD5E1" font-size="32" font-family="Consolas, monospace">User -> Policy -> Ability -> UI</text>
+  <text x="84" y="430" fill="#93C5FD" font-size="26" font-family="Consolas, monospace">&lt;Can I="update" a="Invoice" this={invoice}&gt;</text>
+  <text x="84" y="468" fill="#93C5FD" font-size="26" font-family="Consolas, monospace"> &lt;EditButton /&gt;</text>
+  <text x="84" y="506" fill="#93C5FD" font-size="26" font-family="Consolas, monospace">&lt;/Can&gt;</text>
+  <defs>
+    <linearGradient id="logo" x1="80" y1="110" x2="200" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8" />
+      <stop offset="1" stop-color="#0EA5A6" />
+    </linearGradient>
+  </defs>
+</svg>
