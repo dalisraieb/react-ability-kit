@@ -1,4 +1,4 @@
-![react-ability-kit banner](https://raw.githubusercontent.com/dalisraieb/react-ability-kit/main/assets/banner.png)
+![react-ability-kit banner](https://raw.githubusercontent.com/dalisraieb/react-ability-kit/main/assets/banner.png){style="border-radius:16px;"}
 
 # React Ability Kit
 
