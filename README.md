@@ -1,6 +1,6 @@
-# React Ability Kit
-
 ![react-ability-kit banner](https://raw.githubusercontent.com/dalisraieb/react-ability-kit/main/assets/banner.png)
+
+# React Ability Kit
 
 **A small, strongly-typed permission layer for React**  
 Keep authorization logic **out of your components** and **in one place**.
