@@ -1,11 +1,34 @@
+# React Ability Kit
+
+![npm](https://img.shields.io/npm/v/react-ability-kit)
+![downloads](https://img.shields.io/npm/dm/react-ability-kit)
+![license](https://img.shields.io/npm/l/react-ability-kit)
+
+> 🚀 Built for modern React apps that need **clean, scalable, and type-safe authorization**
+
+**Type-safe authorization & RBAC for React (policy-first, zero runtime surprises)**
+Keep authorization logic **out of your components** and **in one place**.
+
+🔥 A simpler, fully type-safe alternative to CASL for React permissions
+
+> ✅ Used in real-world React apps with complex permission logic
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/dalisraieb/react-ability-kit/main/assets/banner.png" alt="react-ability-kit banner" style="border-radius: 16px;"/>
 </p>
 
-# React Ability Kit
+## Why choose React Ability Kit?
 
-**A small, strongly-typed permission layer for React**  
-Keep authorization logic **out of your components** and **in one place**.
+| Feature                     | react-ability-kit | @casl/react | react-ability |
+|----------------------------|------------------|-------------|--------------|
+| Type safety (TypeScript)   | ✅ Full           | ⚠️ Partial   | ❌ None       |
+| Policy-first approach      | ✅ Yes            | ⚠️ Mixed     | ❌ No         |
+| DX simplicity              | ✅ Extremely simple    | ❌ Complex   | ⚠️ Medium     |
+| Bundle size                | ✅ Lightweight    | ⚠️ Medium    | ✅ Small      |
+| Learning curve             | ✅ Low            | ❌ High      | ⚠️ Medium     |
+| Ownership rules support    | ✅ First-class    | ⚠️ Indirect  | ❌ Limited    |
+
+> If you want **simple + type-safe permissions without the overhead**, this is for you.
 
 ---
 
@@ -113,6 +136,48 @@ or
 
 ```bash
 yarn add react-ability-kit
+```
+
+---
+
+## ⚡ 30 seconds example
+
+```tsx
+const ability = defineAbility((allow, deny, user) => {
+  if (user.role === "admin") {
+    allow("manage", "Invoice");
+  } else {
+    allow("update", "Invoice", i => i.ownerId === user.id);
+    deny("delete", "Invoice");
+  }
+});
+
+<Can I="update" a="Invoice" this={invoice}>
+  <EditButton />
+</Can>
+```
+
+---
+
+## 🎮 Live demo
+
+👉 Try it instantly (no install): <https://dalisraieb.github.io/react-ability-kit/docs/demo>
+
+What you can test:
+
+- Switch between **admin** and **member**
+- Toggle **resource ownership**
+- Instantly see UI updates based on policies
+
+This demo reflects a real-world rule:
+
+```ts
+if (user.role === "admin") {
+  allow("manage", "Invoice");
+} else {
+  allow("update", "Invoice", invoice => invoice.ownerId === user.id);
+  deny("delete", "Invoice");
+}
 ```
 
 ---
@@ -300,7 +365,7 @@ That’s it.
 
 ---
 
-## What this package is NOT
+## Scope (what this package does NOT try to solve)
 
 ❌ Not an authentication system  
 ❌ Not a backend security layer  
@@ -355,3 +420,17 @@ It does this by:
 ## Credits
 
 Created by **Mohamed Ali Sraieb**
+
+---
+
+## Keywords
+
+react permissions  
+react authorization  
+rbac react  
+access control react  
+typescript permissions  
+react acl  
+frontend authorization  
+react security ui  
+policy based access control  

@@ -1,6 +1,6 @@
 {
   "name": "react-ability-kit",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "private": false,
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,6 +13,18 @@
       "require": "./dist/index.cjs"
     }
   },
+  "keywords": [
+    "react",
+    "permissions",
+    "authorization",
+    "rbac",
+    "acl",
+    "access-control",
+    "typescript",
+    "frontend-security",
+    "react-permissions",
+    "policy-based-access-control"
+  ],
   "files": [
     "dist"
   ],
